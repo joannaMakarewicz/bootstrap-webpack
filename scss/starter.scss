@@ -17,7 +17,7 @@ $success: #7952b3;
 @import "bootstrap/scss/root"; // Required
 @import "bootstrap/scss/reboot"; // Required
 @import "bootstrap/scss/type";
-// @import "bootstrap/scss/images";
+@import "bootstrap/scss/images";
 // @import "bootstrap/scss/code";
 @import "bootstrap/scss/grid";
 // @import "bootstrap/scss/tables";
@@ -25,11 +25,11 @@ $success: #7952b3;
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/transitions";
 // @import "bootstrap/scss/dropdown";
-// @import "bootstrap/scss/button-group";
+@import "bootstrap/scss/button-group";
 // @import "bootstrap/scss/input-group"; // Requires forms
 // @import "bootstrap/scss/custom-forms";
-// @import "bootstrap/scss/nav";
-// @import "bootstrap/scss/navbar"; // Requires nav
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar"; // Requires nav
 // @import "bootstrap/scss/card";
 // @import "bootstrap/scss/breadcrumb";
 // @import "bootstrap/scss/pagination";
@@ -42,9 +42,9 @@ $success: #7952b3;
 @import "bootstrap/scss/close";
 // @import "bootstrap/scss/toasts";
 @import "bootstrap/scss/modal"; // Requires transitions
-// @import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/tooltip";
 // @import "bootstrap/scss/popover";
-// @import "bootstrap/scss/carousel";
+@import "bootstrap/scss/carousel";
 // @import "bootstrap/scss/spinners";
 @import "bootstrap/scss/utilities";
 // @import "bootstrap/scss/print";
@@ -60,6 +60,34 @@ body {
   overflow-x: hidden;
   color: #616971;
 }
+
+.navbar-brand img {
+  height: 68px;
+}
+
+.navbar {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  z-index:1;
+}
+
+.nav-item {
+  margin:8px;
+}
+
+.nav-link {
+  color:#5b5555;
+  text-decoration: none;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color:#4981b3; 
+  text-decoration: none;
+}
+
 
 .top-bar {
   align-items: center;
