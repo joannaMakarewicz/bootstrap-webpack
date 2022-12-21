@@ -1,0 +1,141 @@
+@import "~normalize.css";
+
+@import "_variables";
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  color: #616971;
+}
+
+.bg-custom {
+  background-color: rgba(0,0,0, .4);
+  color:white;
+  border-radius: 8px;
+}
+
+#border-primary {
+  border-top: 2px solid #4981b3 !important;
+}
+
+.btn-danger {
+  border:1px solid #AC2615;
+}
+
+.btn-lg {
+  border-radius:0;
+  border-width: medium;
+  font-size:16px;
+  text-transform:uppercase;
+}
+
+.btn-primary {
+  border:0.5px solid #68a0d2;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #4981b3;
+  border:0.5x solid #4981b3;
+}
+
+#carousel {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-caption {
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+text-transform: uppercase;
+}
+
+.carousel-caption h1 {
+font-size:50px !important;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);;
+}
+
+.carousel-caption h2 {
+  font-size:36px !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  text-transform:none;
+  }
+
+.carousel-inner {
+  background-size:cover;
+  max-height: 80vh;
+}
+
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  transition:transform 1.2s ease;
+}
+
+
+.carousel-control-prev img,
+.carousel-control-next img {
+  height: 10%;
+}
+
+.fixed {
+  
+  position:fixed;
+}
+// .fixed-wrap {
+//   background-image: url(../assets/img/active.jpg);
+//   margin:10px;
+// }
+.fixed-background {
+  background: linear-gradient(to right, #386641, #b23a48);
+  padding:10rem 0;
+}
+
+.jumbotron {
+  background:#ced4da;
+}
+
+.navbar-brand img {
+  height: 68px;
+} 
+
+.navbar {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  z-index:1;
+}
+
+.nav-item {
+  margin:8px;
+}
+
+.nav-link {
+  color:#5b5555 !important;
+  text-decoration: none;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color:#4981b3 !important; 
+  text-decoration: none;
+}
+
+.navbar-toggler:hover {
+  box-shadow: 2px 2px 2px 2px #7aaec4;
+}
+.top-bar {
+  align-items: center;
+  background: #7aaec4;
+  display:flex;
+  height: 40px;;
+  padding:4px 0;
+}
+
+.top-bar a {
+  color:white;
+  text-decoration:none;
+  font-size:18px;
+}
